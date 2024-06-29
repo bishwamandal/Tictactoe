@@ -1,0 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  transition: 0.2s ease-in-out;
+  box-sizing: border-box;
+  font-family: "Coiny", cursive;
+}
