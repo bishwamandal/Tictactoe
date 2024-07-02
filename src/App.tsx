@@ -20,22 +20,33 @@ const App: React.FC = () => {
   const [themeDark, setThemeDark] = useState<boolean>(false);
 
   useEffect(() => {
-    if (message) {
+    if (message && !isPopupVisible) {
       setIsPopupVisible(true);
     }
-  }, [message]);
+  }, [message, isPopupVisible]);
 
   useEffect(() => {
-    if (themeDark) {
-      document.body.style.backgroundColor = "#2b2b2b";
-      document.documentElement.style.setProperty("--hover-border-color", "#ecc040");
-      document.documentElement.style.setProperty("--restart-hover-box-shadow", "#ee5a5a");
-    } else {
-      document.body.style.backgroundColor = "wheat";
-      document.documentElement.style.setProperty("--hover-border-color", "#ee5a5a");
-      document.documentElement.style.setProperty("--restart-hover-box-shadow", "#ecc040");
-    }
-  }, [themeDark])
+    const body = document.body;
+    const root = document.documentElement;
+
+    const darkTheme = {
+      backgroundColor: "#2b2b2b",
+      hoverBorderColor: "#ecc040",
+      restartHoverBoxShadow: "#ee5a5a",
+    };
+
+    const lightTheme = {
+      backgroundColor: "wheat",
+      hoverBorderColor: "#ee5a5a",
+      restartHoverBoxShadow: "#ecc040",
+    };
+
+    const theme = themeDark ? darkTheme : lightTheme;
+
+    body.style.backgroundColor = theme.backgroundColor;
+    root.style.setProperty("--hover-border-color", theme.hoverBorderColor);
+    root.style.setProperty("--restart-hover-box-shadow", theme.restartHoverBoxShadow);
+  }, [themeDark]);
 
   const handleCellClick = (index: number) => {
     if (board[index] != "" || message) return;
@@ -55,7 +66,7 @@ const App: React.FC = () => {
   const checkWinner = (board: string[]): string | null => {
     for (let pattern of winningPattern) {
       const [a, b, c] = pattern;
-      if (board[a] && board[a] === board[b] && board[a] === board[c]) {
+      if (board[a] === board[b] && board[a] === board[c]) {
         return board[a];
       }
     }
