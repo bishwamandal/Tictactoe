@@ -15,11 +15,11 @@ Welcome to the Tic-Tac-Toe game! This simple web-based game is built using React
 
 ## How to Play - Multiplayer
 
-1. Open the game in your web browser.
-3. Click on an empty cell to place your symbol.
-4. The game will automatically switch to the other player's turn.
-5. Continue taking turns until a player wins or the game ends in a draw.
-6. To restart the game, click the "Restart" button.
+- Open the game in your web browser.
+- Click on an empty cell to place your symbol.
+- The game will automatically switch to the other player's turn.
+- Continue taking turns until a player wins or the game ends in a draw.
+- To restart the game, click the "Restart" button.
 
 ## Technologies
 
@@ -30,13 +30,12 @@ Welcome to the Tic-Tac-Toe game! This simple web-based game is built using React
 ## Want to copy this repository?
 
 To run the project in your local environment, follow these steps:
-- Clone the repository to your local machine
 ```
-git clone https://github.com/bishwamandal/Tictactoe.git
+>> git clone https://github.com/bishwamandal/Tictactoe.git
+>> npm install
+>> npm run
 ```
-- Run `npm install` or `yarn` in the project directory to install the required dependencies.
-- Run `npm run` start or `yarn start` to get the project started.
-- Open `http://localhost:5173` (or the address shown in your console) in your web browser to view the app.
+Open `http://localhost:5173` (or the address shown in your console) in your web browser to view the app.
 
 ## Contributing
 
