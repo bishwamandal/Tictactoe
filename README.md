@@ -2,6 +2,17 @@
 
 Welcome to the Tic-Tac-Toe game! This simple web-based game is built using ReactJS Framework. It's a classic two-player game where you can challenge a friend to see who can get three in a row first.
 
+## Demo Screens
+
+![image](https://github.com/bishwamandal/Tic-Tac-Toe/assets/102400826/fd4eb3dc-6b2b-4a3f-aad6-4edbfdcb124c)
+![image](https://github.com/bishwamandal/Tic-Tac-Toe/assets/102400826/543d267b-70fb-4e01-af3a-fbc519597321)
+
+## Assets
+
+[`Figma File`](https://github.com/bishwamandal/Tic-Tac-Toe/blob/main/Assets/Design%20Assets.fig)
+
+<img src="https://github.com/bishwamandal/Tic-Tac-Toe/blob/main/Assets/app-icon/App-Icon-1.svg" alt="App Icon" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/bishwamandal/Tic-Tac-Toe/blob/main/Assets/app-icon/App-Icon-2.svg" alt="App Icon" width="50" height="50">
+
 ## How to Play - Multiplayer
 
 1. Open the game in your web browser.
@@ -26,17 +37,6 @@ git clone https://github.com/bishwamandal/Tictactoe.git
 - Run `npm install` or `yarn` in the project directory to install the required dependencies.
 - Run `npm run` start or `yarn start` to get the project started.
 - Open `http://localhost:5173` (or the address shown in your console) in your web browser to view the app.
-
-## Assets
-
-[`Figma File`](https://github.com/bishwamandal/Tic-Tac-Toe/blob/main/Assets/Design%20Assets.fig)
-
-<img src="https://github.com/bishwamandal/Tic-Tac-Toe/blob/main/Assets/app-icon/App-Icon-1.svg" alt="App Icon" width="50" height="50">&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github.com/bishwamandal/Tic-Tac-Toe/blob/main/Assets/app-icon/App-Icon-2.svg" alt="App Icon" width="50" height="50">
-
-## Demo Screens
-
-![image](https://github.com/bishwamandal/Tic-Tac-Toe/assets/102400826/fd4eb3dc-6b2b-4a3f-aad6-4edbfdcb124c)
-![image](https://github.com/bishwamandal/Tic-Tac-Toe/assets/102400826/543d267b-70fb-4e01-af3a-fbc519597321)
 
 ## Contributing
 
