@@ -1,5 +1,5 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
-import "./App.css";
+import "./styles/App.css";
 
 const winningPattern: number[][] = [
   [0, 1, 2],
