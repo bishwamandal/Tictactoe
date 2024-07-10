@@ -25,6 +25,7 @@ Welcome to the Tic-Tac-Toe game! This simple web-based game is built using React
 
 - `Vite`
 - `React.js`
+- `Tailwind CSS`
 - `Typescript`
 
 ## Want to copy this repository?

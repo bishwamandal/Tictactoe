@@ -86,9 +86,9 @@ const App: React.FC = () => {
 
   return (
     <div className={`app ${themeDark ? "dark" : ""}`}>
-      <div className="wrapper">
+      <div className="mt-1em absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         <div className="toptitle">TicTacToe</div>
-        <div className="container">
+        <div className="w-[48vmin] h-[48vmin] max-w-[500px] max-h-[500px] relative flex flex-wrap gap-[3vmin] z-[2]">
           {board.map((_, index) => (
             <button
               key={index}
